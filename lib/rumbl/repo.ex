@@ -6,8 +6,8 @@ defmodule Rumbl.Repo do
   def all(Rumbl.User) do
     [%Rumbl.User{id: 1, name: "John Lennon", email: "lennon@gmail.com", password: "beatle1"},
      %Rumbl.User{id: 2, name: "Paul McCartney", email: "mccartney@gmail.com", password: "beatle2"},
-     %Rumbl.User{id: 2, name: "George Harrison", email: "harrison@gmail.com", password: "beatle3"},
-     %Rumbl.User{id: 2, name: "Ringo Starr", email: "starr@gmail.com", password: "beatle4"}]
+     %Rumbl.User{id: 3, name: "George Harrison", email: "harrison@gmail.com", password: "beatle3"},
+     %Rumbl.User{id: 4, name: "Ringo Starr", email: "starr@gmail.com", password: "beatle4"}]
   end
 
   def get(module, id) do

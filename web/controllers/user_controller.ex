@@ -6,4 +6,10 @@ defmodule Rumbl.UserController do
     render conn, "index.html", users: users
   end
 
+  def show(conn, %{"id" => id}) do
+    {int_id, _} = Integer.parse(id)
+    user = Rumbl.Repo.get(Rumbl.User, int_id)
+    render conn, "show.html", user: user
+  end
+
 end
